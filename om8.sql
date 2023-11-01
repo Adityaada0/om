@@ -13,7 +13,7 @@ FROM employee
 LEFT JOIN branch
 ON employee.emp_id= branch.mgr_id;
 
---RIGHT JOIN all row of right
+--RIGHT JOIN all row of right and left side which saticfy  conditon (WHICH IS WRITTEN AFTER :-'ON')
 SELECT employee.emp_id,employee.first_name, branch.branch_name
 FROM employee
 RIGHT JOIN branch
