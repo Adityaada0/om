@@ -6,7 +6,7 @@ JOIN branch
 ON employee.emp_id = branch.mgr_id;
 
 -- left join (all rows of left )
--- all of  table of joined left side but in branch table means right table that matches right table that matches the condition
+-- complete  table of joined left side, but in branch table which is on right means right table  that matches the condition will be accesed
 
 SELECT employee.emp_id,employee.first_name, branch.branch_name
 FROM employee
