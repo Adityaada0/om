@@ -1,4 +1,4 @@
-CREATE DATABASE info;
+CREATE  DATABASE info;
 USE info;
 CREATE TABLE Students (
     id INT PRIMARY KEY,
@@ -6,6 +6,7 @@ CREATE TABLE Students (
     grade INT,
     status VARCHAR(10)
 );
+-- 
 DELIMITER +
 CREATE TRIGGER check_grade BEFORE INSERT ON Students FOR EACH ROW BEGIN
     DECLARE new_grade INT;
@@ -26,4 +27,4 @@ INSERT INTO Students (id, name, grade) VALUES
 (4, 'David', 10); 
 
 
-SELECT * FROM Students;
+SELECT * FROM Students;T=
